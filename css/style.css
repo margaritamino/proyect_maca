@@ -1,0 +1,106 @@
+* {
+    /* Eliminamos espacios y márgenes*/
+    margin:0;
+    padding:0;
+   /* Declaramos una tipografía para TODO */
+
+  }
+
+  .encabezado {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: #f9b5ce;
+    }
+
+  .encabezado img{
+    width: 250px;
+  }
+
+  .navegador {
+    display: flex;
+   justify-content: end;   
+  }
+
+  .menu-list {
+    display: flex;
+
+  }
+
+  .titulos h1{
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+  }
+  
+  .titulos h2{
+    margin: 20px;
+   color: #860680;
+
+  }
+
+.header {
+  background-color: #f7aae0;
+}
+
+.encabezado nav {
+  display: flex;
+  
+  align-items: last baseline;
+}
+/*align-items: end;*/
+  
+    .menu-list li a{
+       color: #860680;
+       text-decoration: none;
+       list-style: none;
+       font-weight: bolder;
+       font-style: italic;
+       margin: 5px;
+    }
+    .menu-list li{
+        list-style: none;      
+
+    }
+
+    .cursos{
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+       .color-fondo{
+        background-color: #f7cbf4;
+        width: 320px;
+        border-radius: 10px;
+        padding: 20px 1px 20px 20px;
+        margin: 10px;
+     }
+
+     
+
+    .cont-img{
+        width: 300px;
+      
+    }
+
+    .cont-img img{
+        width: 100%
+    }
+
+    footer img{
+        width: 10%;
+    }
+        /* Servicios */
+
+        /* Nosotros*/
+        .nosotros p{
+            font-style: italic;
+            font-weight: bold;
+        }
+
+        
+
+
+ 
+  
