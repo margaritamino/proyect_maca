@@ -3,70 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--BT-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+
     <link rel="stylesheet" href="../css/style.css">
     <title>Document</title>
 </head>
 <body>
+<div class="cursos-grid">
+
     <header class="encabezado">
-        <img src="../assets/logo.jpg" alt="logo">
-        <nav>
-            <ul class="menu-list"> 
-                <li><a href="../index.html">Inicio</a></li>
-                <li><a href="../html/servicios.html">Servicios</a></li>
-                <li><a href="../html/nosotros.html">Nosotros</a></li>
-                <li><a href="../html/contactos.html">Contactos</a></li>
-            </ul>
-        </nav>
+    <section class="logo">
+        <img src="../assets/dsBuffer.bmp.png" alt="logo">
+    </section>
+    <div class="navegador">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+              <a class="navbar-brand" href="#">Estudio</a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                  <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                  <a class="nav-link" href="./servicios.html">Servicios</a>
+                  <a class="nav-link" href="./nosotros.html">Nosotros</a>
+                  <a class="nav-link" href="./contactos.html">Contactos</a>
+                  <a class="nav-link disabled" aria-disabled="true"></a>
+                </div>
+              </div>
+            </div>
+          </nav>
+
+    </div>
      
     </header>
-    <br>
+
     <main>
-        <section>
-            <h1>Estudio Juridico Macarena & Asoc.</h1>
-            <br>
-            <h2>Cursos</h2>
-            <br>
-            <article>
-                <div class="cont-img">
-                    <img src="../assets/ciud.española.jpg" alt="imag. cidadania española">
-                   
-                </div>
-                <p>Aprende a realizar todas las gestiones necesarias <br> para obtener la ciudadania española <br>o para brindar un servicio nuevo</p>
-            </article>
-            <br>
-            <article>
-                <div class="cont-img">
-                    <img src="../assets/Infracciones.jpg" alt="Infracciones de transito">
-                    
-                </div>
-                <p>Suma un nuevo servicio a tu estudio o gestoria. <br> Mas de 1000 profecionales ya lo hicieron!</p>
-            </article>
-            <br>
-            <article>
-                <div class="cont-img">
-                    <img src="../assets/ciud.Italiana.jpg" alt="Ciudadania Italiana">
-             </div>
-                <p>Te enseñamos todo lo necesario <br>para solicitar la ciudadania italiana.</p>
-            </article>
-            <br>
-            <article>
-                <div class="cont-img">
-                    <img src="../assets/tramite.veraz.jpg" alt="Tramite veraz">                    
-                </div>
-                <p>Taller intensivo donde les enseñamos todo lo necesario <br> para llevar a cabo los reclamos ante Veraz</p>
-            </article>
-            <br>
-            <article>
-                <div class="cont-img">
-                    <img src="../assets/pensiones.anses.jpg" alt="Pensiones anses">                  
-                </div>
-                <p>Capacitacion para realizar la gestion de pensiones en ANSES.</p>
-            </article>
+        <section class="titulos">
+            <h1 class="titulos__principal">Estudio Juridico Macarena & Asoc.</h1>
+        
+            <h2 class="titulos__secundario">Cursos</h2>
+
         </section>
+
+    <section class="cursos">
+        <article class="cursos__color-recuadro">
+            <div class="cursos__color-recuadro__imagen">
+                    <img src="../assets/ciud.española.jpg" alt="imag. cidadania española">
+             </div>
+                <p>Aprende a realizar todas las gestiones necesarias <br> para obtener la ciudadania española <br>o para brindar un servicio nuevo</p>
+        </article>
+    
+        <article class="cursos__color-recuadro">
+            <div class="cursos__color-recuadro__imagen">
+                    <img src="../assets/Infracciones.jpg" alt="Infracciones de transito">
+            </div>
+                <p>Suma un nuevo servicio a tu estudio o gestoria. <br> Mas de 1000 profecionales ya lo hicieron!</p>
+        </article>
+        
+        <article class="cursos__color-recuadro">
+            <div class="cursos__color-recuadro__imagen">
+                    <img src="../assets/ciud.Italiana.jpg" alt="Ciudadania Italiana">
+            </div>
+                <p>Te enseñamos todo lo necesario <br>para solicitar la ciudadania italiana.</p>
+        </article>
+           
+        <article class="cursos__color-recuadro">
+            <div class="cursos__color-recuadro__imagen">
+                 <img src="../assets/tramite.veraz.jpg" alt="Tramite veraz">                    
+            </div>
+                <p>Taller intensivo donde les enseñamos todo lo necesario <br> para llevar a cabo los reclamos ante Veraz</p>
+            
+        </article>
+           
+        <article class="cursos__color-recuadro">
+            <div class="cursos__color-recuadro__imagen">
+                    <img src="../assets/pensiones.anses.jpg" alt="Pensiones anses">                  
+            </div>
+                <p>Capacitacion para realizar la gestion de pensiones en ANSES.</p>
+         </article>
+    </section>
+
     </main>
     <footer>
         <img src="../assets/logo.jpg" alt="Logo">
-        <br>
+    
     
         <form action="form.php" method="post">
             <p>Comentarios</p>
@@ -77,19 +100,7 @@
             <input type="button" value="Enviar">
     
         </form>
-    
-        <br>
-        <nav>
-            <ul class="menu-list">
-                <ul class="menu-list">
-                    <li><a href="../index.html">Inicio</a></li>
-                    <li><a href="../html/servicios.html">Servicios</a></li>
-                    <li><a href="../html/nosotros.html">Nosotros</a></li>
-                    <li><a href="../html/contactos.html">Contactos</a></li>
-                </ul>
-            </ul>
-        </nav>
-        <br>
+       
     
         <div>
             <img src="Instagram" alt="Instagram">
@@ -98,6 +109,10 @@
         </div>
     </footer>
 
+</div>
+<!--script bs-->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
     
 </body>
 </html>

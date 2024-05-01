@@ -6,51 +6,90 @@
 
   }
 
-  .encabezado {
+  .pagina-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.7fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.2fr;
+    grid-template-areas : 
+    "header header header "
+    "main main aside"
+    "main main aside"
+    "footer footer footer"
+    ;
+
+  }
+
+  header{
+    grid-area: header;
+  }
+
+  main{
+    grid-area: main;
+  }
+
+  aside{
+    grid-area: aside;
+  }
+
+  footer{
+    grid-area: footer;
+  }
+
+.cursos-grid{
+  display: grid;
+  grid-template-columns: 1fr 1fr 0.7fr;
+  grid-template-rows: 0.1fr 1fr 0.2fr;
+  grid-template-areas : 
+  "encab encab encab"
+  "curso curso curso"
+  "pie-cursos pie-cursos pie-cursos"
+  }
+
+  .cursos-grid header{
+    grid-area: encab;
+  }
+
+  .cursos-grid main{
+    grid-area: curso;
+  }
+
+  .cursos-grid footer{
+    grid-area: pie-cursos;
+  }
+
+  .header {
+    background-color: #f7aae0;
+  }
+
+  .logo{
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     background-color: #f9b5ce;
+  
     }
+   
 
-  .encabezado img{
+  .logo img{
     width: 250px;
+    border-radius: 50%;
+
   }
 
-  .navegador {
+  /*.navegador {
     display: flex;
    justify-content: end;   
   }
+  
 
-  .menu-list {
+  .menu{
     display: flex;
 
   }
 
-  .titulos h1{
-    display: flex;
-    justify-content: center;
-    margin: 20px;
-  }
-  
-  .titulos h2{
-    margin: 20px;
-   color: #860680;
 
-  }
-
-.header {
-  background-color: #f7aae0;
-}
-
-.encabezado nav {
-  display: flex;
   
-  align-items: last baseline;
-}
-/*align-items: end;*/
-  
-    .menu-list li a{
+    .menu li a{
        color: #860680;
        text-decoration: none;
        list-style: none;
@@ -58,9 +97,22 @@
        font-style: italic;
        margin: 5px;
     }
-    .menu-list li{
+    .menu li{
         list-style: none;      
 
+    }
+    */
+
+    .titulos__principal{
+      display: flex;
+      justify-content: center;
+      margin: 20px;
+    }
+    
+    .titulos__secundario{
+      margin: 20px;
+     color: #860680;
+  
     }
 
     .cursos{
@@ -69,35 +121,143 @@
       justify-content: center;
     }
 
-       .color-fondo{
+       .cursos__color-recuadro{
         background-color: #f7cbf4;
         width: 320px;
         border-radius: 10px;
-        padding: 20px 1px 20px 20px;
+        padding: 20px 10px 1px 20px;
         margin: 10px;
      }
 
      
 
-    .cont-img{
-        width: 300px;
+    .cursos__color-recuadro__imagen{
+        width: 280px;
       
     }
 
-    .cont-img img{
+    .cursos__color-recuadro__imagen img{
         width: 100%
+      
+    }
+
+    .servicios{
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .servicios__titulo-serv h2{
+      flex-wrap: wrap;
+      margin-top: 90px;
+      margin-bottom: 20px;
+      color: #860680;
+      
+    }
+
+    .servicios__asesoramiento p{
+      flex-wrap: wrap;
+      margin-bottom: 20px;
+    }
+
+    footer{
+      display: flex;
+      flex-wrap: wrap;
+     justify-content: center;
+
     }
 
     footer img{
         width: 10%;
-    }
-        /* Servicios */
+   
 
-        /* Nosotros*/
+    }
+    footer form{
+      width: 10%;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: end;
+    }
+
         .nosotros p{
             font-style: italic;
             font-weight: bold;
         }
+        .redes{
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: end;
+        }
+
+@media (max-width:768px)  {
+  .pagina-grid{
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.5fr 0.5fr 0.06fr;
+    grid-template-areas : 
+    "header header"
+    "main aside"
+    "main aside"
+    "footer footer"
+    ;
+
+  }
+  .cursos__color-recuadro__imagen{
+    width: 180px;  
+}
+.cursos__color-recuadro{
+  background-color: #f7cbf4;
+  width: 220px;
+  border-radius: 10px;
+  padding: 20px 1px 20px 20px;
+  margin: 10px;
+}
+}   
+
+@media(max-width:576px) {
+  .pagina-grid{
+    grid-template-columns: 1fr;
+  grid-template-rows: 0.1fr 1fr 0.5fr 0.1fr;
+  grid-template-areas : 
+  "header"
+  "main"
+  "aside"
+  "footer"
+  ;
+
+}
+.servicios__titulo-serv h2{
+  margin-top: 10px;
+  margin-bottom: 20px;
+  margin-right: 150px;
+  color: #860680;
+
+}
+
+}
+
+@media(max-width:768px) {
+  .cursos-grid{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr;
+    grid-template-areas : 
+    "encab encab"
+    "curso curso"
+    "pie-cursos pie-cursos"
+    }
+}
+
+@media(max-width:576px) {
+  .cursos-grid{
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 0.1fr 0.1fr 0.2fr;
+    grid-template-areas : 
+    "encab"
+    "curso"
+    "pie-cursos"
+    }
+}
+
 
         
 
